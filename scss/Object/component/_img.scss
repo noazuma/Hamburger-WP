@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+
+.c-img {
+    width: 100%;
+
+
+
+    &__grid {
+        @include m.mq(tab){
+        grid-template-columns: 1fr 1fr;
+    }
+        @include m.mq(pc){
+        grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+}
+
+    

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+
+.p-serach {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    @include m.mq(pc){
+        margin: 96px 31px auto 0;
+        display: flex;
+    }
+    
+
+    &__box {
+        border: 0.1px solid  #000;
+        border-radius: 10px;
+        height: 46px;
+        width: 230px;
+        margin-right: 6px;
+
+        // ::placeholder {
+        //     background-image: url(../img/icon/search-icon.svg);
+        //     background-repeat: no-repeat;
+        //     background-position: 5px;
+        // }
+
+        @include m.mq(pc){
+            height: 46px;
+            width: 396px;
+        }
+    }
+
+   
+}

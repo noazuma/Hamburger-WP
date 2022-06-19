@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+
+
+.p-head {
+    text-align: center;
+
+    &__title {
+        // color: #707070;
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+        padding: 10px 0 38px 0;
+        text-align: center;
+
+        @include m.mq(pc){
+            margin: 67px auto auto 65px;
+            font-size: 64px;
+        }
+
+        
+    }
+
+    &__menu {
+        // text-align: right;
+        position: absolute;
+        font-size: 20px;
+        // margin-right: 0.8rem;
+        top: 14px;
+        right: 16px;
+        @include m.mq(pc) {
+            display: none;
+        }
+    }
+    
+}

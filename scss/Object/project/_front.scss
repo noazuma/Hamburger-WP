@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+
+.p-front {
+
+    &__title {
+        font-size: 36px;
+        padding: 120px 134px 115px 24px;
+        
+        @include m.mq (tab){
+            display: flex;
+            font-size: 60px;
+            font-family: v.$roboto;
+        }
+
+    }
+
+    &__sub {
+        font-size: 16px;
+        @include m.mq (tab){
+            padding-top:35px;
+            padding-left: 20px;
+        }
+
+    }
+
+    &--top {
+        font-size: 36px;
+        padding: 0 0 0 26px;
+        @include m.mq(tab){
+            font-size: 60px;
+        }
+
+    }
+
+
+    &--main {
+        background-image: url(/img/mainvisual-sp@2x.jpg);
+        background-size: cover;
+        height: 285px;
+        @include m.mq(tab) {
+            background-image: url(/img/mainvisual-tab.png);
+            background-size: cover;
+        }
+        @include m.mq(pc) {
+            background-image: url(../img/mainvisual-pc.jpg);
+            background-position: center center;
+            height: 530px;
+        }     
+    }
+    &--menu {
+        background-image: url(/img/page-title/page-title_arcive@2x.jpg);
+        background-size: cover;
+        height: 285px;
+        @include m.mq(tab) {
+            background-size: cover;
+        }
+        @include m.mq(pc) {
+            background-position: center center;
+            height: 530px;
+        }
+    }
+
+    &--single {
+        background-image: url(/img/main/single-br.svg);
+        background-size: cover;
+        height: 225px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include m.mq(tab) {
+            background-image: url(/img/main/single-br-tab.svg);
+            // background-position: center center;
+            height: 500px;
+        }
+        @include m.mq(pc) {
+            background-image: url(/img/main/single-br-pc.svg);
+            // background-position: center center;
+        }
+    }
+
+
+    &--page {
+        background-image: url(/img/main/page.svg);
+        background-size: cover;
+        height: 225px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include m.mq(tab) {
+            background-image: url(/img/main/page_tab.svg);
+            // background-position: center center;
+            height: 500px;
+        }
+        @include m.mq(pc) {
+            background-image: url(/img/main/page_pc.svg);
+            // background-position: center center;
+        }
+    }
+}
+

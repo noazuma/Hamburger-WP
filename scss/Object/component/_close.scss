@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+
+
+.c-close {
+
+
+    &__menu {
+        display: none;
+
+
+    @include m.mq(pc) {
+        display: inline-block;
+        
+    }
+
+}
+
+    &__bt {
+        display: inline-block;
+        
+        
+    @include m.mq(pc) {
+            display: none;
+            
+    }
+
+
+}
+}

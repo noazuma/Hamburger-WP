@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+
+.p-card {
+    background-color: v.$card-box;
+    padding-top: 32px;
+    padding-left: 17px;
+    display: flex;
+    flex-direction: column;
+
+    @include m.mq(tab) {
+        display: grid;
+        grid-column: 4/5;
+    }
+
+    &__img {
+        width: 100%;
+        @include m.mq(tab) {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        width: 50%;
+        }
+
+    }
+
+
+
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 24px;
+    }
+
+    
+    &__sub-title {
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+    &__text {
+        font-weight: lighter;
+        padding-right: 73px;
+        // padding-bottom: 40px;
+    }
+
+}

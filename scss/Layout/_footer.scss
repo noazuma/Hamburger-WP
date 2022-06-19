@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@use "../Foundation/mixin" as m;
+@use "../Foundation/variable" as v;
+
+
+
+.l-footer {
+    background-color: #9D8670;
+    height: 150px;
+    padding: 1.8rem;
+
+
+
+
+    @include m.mq(pc) {
+        display: grid;
+        grid-column: 1/5;
+        grid-row: 4/5;
+    }
+}

@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+
+.p-branch {
+    grid-template-rows: 1fr 1fr;
+    margin: 20px 20px;
+    gap: 20px;
+
+    @include m.mq(tab) {
+        display: flex;
+        justify-content: center;
+        gap:40px;
+    }
+
+    @include m.mq(pc) {
+        // display: flex;
+        // justify-content: center;
+        gap:80px;
+        margin: 80px 80px;
+    }
+
+
+    &--menu {
+        display: grid;
+        min-height: 643px;
+        width: 335px;
+
+        @include m.mq(tab) {
+            min-height: 681px;
+            width: 356px;
+        }
+        
+        &__box {
+            background: rgba(255,255,255,0.8);
+            min-height: 124px;
+            // width: 314px;
+            margin: 0.6rem;
+
+            @include m.mq(tab){
+                min-height: 138px;
+            }
+
+            @include m.mq(pc){
+                min-height: 166px;
+            }
+        }
+
+        &__line {
+            position: relative;
+            left: 13px;
+            bottom: 3.6rem;
+        }
+    }
+
+    &__sub {
+        font-size: 16px;
+        // font-weight: lighter;
+        padding: 0.5rem;
+    }
+}

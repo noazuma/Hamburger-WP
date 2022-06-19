@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+
+
+.p-pagination {
+    display: flex;
+    justify-content: space-between;
+
+        @include m.mq (tab){
+            justify-content: center;
+            align-items: center;
+        }
+
+    &__page{
+        display: none;
+        @include m.mq (tab){
+            display: flex;
+            white-space: nowrap;
+            padding-right: 10px;
+            font-size: 16px;
+            font-family: v.$roboto;
+            font-weight: bold;
+            }
+        @include m.mq (pc){
+            padding-right: 20px;
+        }
+        }
+        
+        
+
+    &__text {
+        color: v.$main;
+        font-size: 16px;
+        font-weight: regular;
+
+        @include m.mq (tab){
+            display: none;
+        }
+            
+    }
+
+    &__next{
+        padding: 40.4px 45px 31px 45px;
+        display: flex;
+        gap: 10px;
+        @include m.mq (tab){
+            padding: 0
+        }
+        @include m.mq (pc){
+            height: 30%;
+        }
+    }
+    
+    &__back{
+        padding: 40.4px 45px 31px 45px;
+        display: flex;
+        gap:10px;
+        @include m.mq (tab){
+            padding: 0;
+        }
+        @include m.mq (pc){
+            height: 30%;
+        }
+    }
+
+    &__list {
+        display: none;
+
+
+        @include m.mq(tab){
+            display: flex;
+            padding: 0px;
+
+        }
+    }
+
+    &__list-box {
+            border: .7px solid;
+            height: 35px;
+            width: 35px;
+            // padding: 6px;
+            margin: 12px;
+            display: inline-block;
+            text-align: center;
+            :hover {
+                background-color: #3C2B1C;
+                color: #fff;
+            }
+
+            a {
+                display: inline-block;
+                padding: 6px;
+                width: 100%;
+            }
+
+    }
+
+    }
+

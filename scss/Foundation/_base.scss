@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+
+@use "mixin" as m;
+
+
+
+*{
+    font-family: 'M PLUS 1', sans-serif;
+
+
+};
+
+body {
+    width: 100%;
+    background-color: #FFFDFA;
+    min-width: 300px;
+    @include m.mq(pc) {
+        display: grid;
+
+    }
+
+
+}
+
+a {
+    text-decoration: none;
+    color: #707070;
+    height: 100%;
+    // width: 100%;
+
+}   //下線削除 色
+
+ul li {
+    list-style-type: none;
+}   //リスト点削除
+
+h1 {
+    color:#fff;
+}
+
+
+h2 {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+
+
+.spen {
+    margin: 0px;
+}

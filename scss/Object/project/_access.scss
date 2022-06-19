@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+
+.p-access {
+
+    background-image: url(../img/map/br-map.png);
+    background-size: cover;
+    min-height: 691px;
+    margin-top: 3rem;
+    z-index: 1;
+    position: relative;
+
+        @include m.mq(tab){
+            min-height: 415px;
+        }
+
+        @include m.mq(pc){
+            min-height: 649px;
+        }
+
+    &__text {
+        text-align: center;
+        color: #FFF;
+        padding: 35px;
+        line-height: 2.5rem;
+        font-size: 14px;
+        flex-wrap: wrap;
+        z-index: 200;
+
+        @include m.mq(pc){
+            font-size: 16px;
+            width: 61%;
+        }
+    }
+}

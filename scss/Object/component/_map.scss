@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+
+.c-map {
+    
+
+    &__strong {
+        background: rgba(0,0,0,0.4);
+        height: 60%;
+        width: 100%;
+        z-index: 100;
+        position: absolute;
+
+        @include m.mq(tab){
+            height: 100%;
+        }
+
+        @include m.mq(pc){
+            width: 61%;
+            height: 100%;
+        }
+    }
+
+    &__light {
+        background: rgba(0,0,0,0.3);
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        position: absolute;
+    }
+}

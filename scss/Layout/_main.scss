@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@use "../Foundation/mixin" as m;
+@use "../Foundation/variable" as v;
+
+
+
+.l-main {
+    width: 100%;
+    
+
+
+
+    @include m.mq(pc) {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 2/4;
+
+    }
+}

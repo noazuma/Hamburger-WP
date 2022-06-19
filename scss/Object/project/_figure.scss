@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+
+
+.p-figure {
+        padding: 0 30px 30px;
+@include m.mq(tab){
+        padding: 0 60px 12rem;
+}
+
+    &__img {
+        width: 50%;
+        @include m.mq(tab){
+            width: 40%;
+        }
+    }
+    &__text {
+        width: 45%;
+        @include m.mq(tab){
+            width: 60%;
+        }
+    }
+    &__list {
+        width: 100%;
+        gap: 20px;
+    }
+
+}

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+.p-footer {
+    display: flex;
+    color: #FFFFFF;
+    font-size: 20px;
+    justify-content: center;
+    margin-top: 0%;
+    padding: 0 1.3rem;
+
+
+
+    &__shop {
+        color: #FFFFFF;
+        // position: relative;
+    }
+
+
+    &__cp {
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: regular;
+        text-align: center;
+    }
+
+
+}

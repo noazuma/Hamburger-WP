@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+.p-sidemenu {
+
+
+
+    &__main {
+        color: #808080;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        cursor:pointer;
+    }
+
+    &__sub {
+        color: #707070;
+        font-size: 20px;
+        margin-bottom: 23px;
+        cursor:pointer;
+    }
+
+}

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+
+.c-icon {
+    background-image: url(../img/icon/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 5px;
+}
+
