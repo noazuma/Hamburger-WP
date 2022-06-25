@@ -552,7 +552,7 @@ h2 {
 }
 @media screen and (min-width: 1162px) {
   .p-front--main {
-    background-image: url(../img/mainvisual-pc.jpg);
+    background-image: url(/img/mainvisual-pc.jpg);
     background-position: center center;
     height: 530px;
   }

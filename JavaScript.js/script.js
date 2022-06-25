@@ -1,4 +1,4 @@
-$(function() {
+jQuery(function($){$(function() {
 
 $('.p-head__menu').on("click",function () 
 
@@ -36,8 +36,8 @@ $(window).resize(function(){
 
   
     let width = $(window).width();
-   
-   
+
+
     // 条件を設定する
     if (width >= 1025) {
       $(".l-sideber").css("transition", "none");}
@@ -45,6 +45,7 @@ $(window).resize(function(){
     else if (width < 1024) {
       $(".l-sideber").css("transition", "");}
   }
- 
+
 );
+});
 });
