@@ -38,15 +38,15 @@
 
 
     &--main {
-        background-image: url(/img/mainvisual-sp@2x.jpg);
+        background-image: url(../img/mainvisual-sp@2x.jpg);
         background-size: cover;
         height: 285px;
         @include m.mq(tab) {
-            background-image: url(/img/mainvisual-tab.png);
+            background-image: url(../img/mainvisual-tab.png);
             background-size: cover;
         }
         @include m.mq(pc) {
-            background-image: url(/img/mainvisual-pc.jpg);
+            background-image: url(../img/mainvisual-pc.jpg);
             background-position: center center;
             height: 530px;
         }     
