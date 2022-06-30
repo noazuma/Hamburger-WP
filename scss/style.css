@@ -699,7 +699,7 @@ h2 {
   width: 100%;
 }
 .p-container__eat-in {
-  background-image: url(../../../img/top-menu/burger-side.png);
+  background-image: url(../img/top-menu/burger-side.png);
   flex-direction: column;
   background-size: cover;
   width: 100%;
