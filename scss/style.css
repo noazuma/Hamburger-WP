@@ -574,7 +574,7 @@ h2 {
   }
 }
 .p-front--single {
-  background-image: url(/img/main/single-br.svg);
+  background-image: url(../img/main/single-br.svg);
   background-size: cover;
   height: 225px;
   display: flex;
@@ -583,13 +583,13 @@ h2 {
 }
 @media screen and (min-width: 700px) {
   .p-front--single {
-    background-image: url(/img/main/single-br-tab.svg);
+    background-image: url(../img/main/single-br-tab.svg);
     height: 500px;
   }
 }
 @media screen and (min-width: 1162px) {
   .p-front--single {
-    background-image: url(/img/main/single-br-pc.svg);
+    background-image: url(../img/main/single-br-pc.svg);
   }
 }
 .p-front--page {
