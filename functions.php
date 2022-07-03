@@ -15,6 +15,7 @@ function custom_theme_support(){
     register_nav_menus(array(
         'footer_nav' => esc_html__('footer navigation', 'rtbread'),
         'category_nav' => esc_html__('category navigation', 'rtbread'),
+        'main-menu' => 'メインメニュー',
     ));
     add_theme_support('editor-styles');
     add_editor_style();
