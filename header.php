@@ -30,7 +30,7 @@
 <header class="l-header">
 <h2 class="p-head__menu c-button--menu">Menu</h2>
 
-<h1 class="p-head__title c-title"><a href="href=<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+<h1 class="p-head__title c-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 <?php get_search_form(); ?>
 </header>
 
