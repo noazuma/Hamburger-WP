@@ -40,4 +40,16 @@ function wpbeg_script() {
 add_action( 'wp_enqueue_scripts', 'wpbeg_script' );
 
 
+
+// カスタムウォーカーの編集
+class custom_walker_nav_menu extends Walker_Nav_Menu {
+    function start_el(&$output, $item, $depth = 0, $args = array(),$id = 0) {
+        $output .= '<li class="p-sidemenu__sub"><ul class="">';
+    }
+    function end_lev(&$output, $depth = 0, $args = array()) {
+        $output .= '</ul></li>';
+    }
+}
+
+
 ?>

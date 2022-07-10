@@ -11,8 +11,13 @@
     <?php 
     wp_nav_menu( array( 
     'theme_location' => 'main-menu' ,
-    'container' => 'false',
+    'container' => '',
     'container_id' => '',
+    'container_class' => '',
+    'items_wrap'   => '<ul>%3$s</ul>',
+    'menu_class' => 'p-sidemenu__main',
+    'walker' => new custom_walker_nav_menu
+
     ) ); 
 ?>
     <!-- <ul class="c-padding__bottom">
