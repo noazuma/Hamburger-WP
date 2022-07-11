@@ -177,13 +177,3 @@
 </main>
 <!-- フッター -->
 <?php get_footer(); ?>
-
-
-
-
-
-
-<script src="/JavaScript.js/jquery-3.6.0.min.js"></script>
-<script src="/JavaScript.js/script.js"></script>
-</body>
-</html>

@@ -6,7 +6,7 @@
 <main class="l-main">
     <div class="p-front--main">
         
-        <h2 class="p-front__title">ダミーサイト</h2>
+        <h2 class="p-front__title"><?php bloginfo( 'description' ); ?></h2>
 
     </div> 
 <!--メニュー  -->
@@ -91,10 +91,3 @@
 
 
 
-
-
-
-<script src="/JavaScript.js/jquery-3.6.0.min.js"></script>
-<script src="/JavaScript.js/script.js"></script>
-</body>
-</html>
