@@ -44,11 +44,12 @@ add_action( 'wp_enqueue_scripts', 'wpbeg_script' );
 
 // カスタムウォーカーの編集
 class custom_walker_main_menu extends Walker_Nav_Menu {
-    function start_el(&$output, $item, $depth = 0, $args = array(),$id = 0) {
-        $output .= '<li class="p-sidemenu__sub"><h3><a href="'.$item->url.'">'.$item->title.'</a></h3>';
-    }
-    function end_lev(&$output, $depth = 0, $args = array()) {
-        $output .= '</li>';
+    function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
+        if($depth == 0){ //第一階層のときにp-sidemenu__mainと、h3タグを付ける
+            $output .= '<li class="p-sidemenu__main"><h3><a href="'.$item->url.'">'.$item->title.'</a></h3>';//$item->url、$item->titleはリンク先と項目名の指定
+        }else{ //第一階層以外は第一階層のときにp-sidemenu__subを付ける
+            $output .= '<li class="p-sidemenu__sub"><a href="'.$item->url.'">'.$item->title.'</a>';
+        }
     }
 }
 
