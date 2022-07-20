@@ -8,6 +8,7 @@
         <span class="c-line__menu2 c-close__bt"></span>
     </button>
     <nav class="p-nav"> 
+    <!-- <ul class="c-padding__bottom"> -->
     <?php 
     wp_nav_menu( array( 
     'theme_location' => 'main-menu',
@@ -20,8 +21,8 @@
 
     ) ); 
 ?>
-    <!-- <ul class="c-padding__bottom">
-        <li class="p-sidemenu__main"><a>バーガー</a></li>
+    
+        <!-- <li class="p-sidemenu__main"><a>バーガー</a></li>
             <ul>
                 <li class="p-sidemenu__sub">ハンバーガー</li>
                 <li class="p-sidemenu__sub">チーズバーガー</li>
@@ -48,8 +49,8 @@
                 <li class="p-sidemenu__sub">アップル</li>
                 <li class="p-sidemenu__sub">紅茶（Ice/Hot）</li>
                 <li class="p-sidemenu__sub">コーヒー（Ice/Hot）</li>
-            </ul>
+            </ul> -->
         
-    </ul> -->
+    <!-- </ul> -->
 </nav>
 </sidebar>

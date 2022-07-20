@@ -2,7 +2,7 @@
 <html lang="<?php language_attributes(); ?>"> <!-- 言語設定を自動的に取得 -->
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset');?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamburger</title>

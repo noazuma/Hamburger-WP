@@ -558,7 +558,7 @@ h2 {
   }
 }
 .p-front--menu {
-  background-image: url(/img/page-title/page-title_arcive@2x.jpg);
+  background-image: url(../img/page-title/page-title_arcive@2x.jpg);
   background-size: cover;
   height: 285px;
 }
