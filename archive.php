@@ -28,10 +28,10 @@
             <?php if(has_post_thumbnail()): ?>
             <?php the_post_thumbnail('large',array('class' => 'p-card__img')); ?>
             <?php else: ?>
-            <img class="p-card__img"  src="/img/cheese burger.svg" alt="チーズバーガー">
+            <!-- <img class="p-card__img"  src="/img/cheese burger.svg" alt="チーズバーガー"> -->
             <?php endif; ?>
             <div class="p-card">
-                <h3 class="c-title__card p-card__title">チーズバーガー</h3>
+                <h3 class="c-title__card p-card__title"><?php the_title(); ?></h3>
 
                 <h4 class="c-card__text p-card__sub-title">小見出しが入ります</h4>
 
@@ -48,7 +48,7 @@
             </div>
         </figure>
 
-        <figure class="c-card__box">
+        <!-- <figure class="c-card__box">
             <img  class="p-card__img" src="/img/cheese burger.svg" alt="チーズバーガー">
             <div class="p-card">
                 <h3 class="c-title__card p-card__title">ダブルチーズバーガー</h3>
@@ -85,7 +85,7 @@
                     <buttom  class="c-button__card">
                         詳しくみる
                     </buttom>
-            </div>
+            </div> -->
             <?php endwhile;
             else:
                 echo '記事がありません';

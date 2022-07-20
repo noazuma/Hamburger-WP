@@ -622,6 +622,7 @@ h2 {
 .p-sidemenu__sub {
   color: #707070;
   font-size: 20px;
+  margin-top: 20px;
   margin-bottom: 23px;
   cursor: pointer;
 }
@@ -785,6 +786,7 @@ h2 {
 }
 .p-card__img {
   width: 100%;
+  aspect-ratio: 16/9;
 }
 @media screen and (min-width: 700px) {
   .p-card__img {
