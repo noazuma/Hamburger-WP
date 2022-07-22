@@ -799,7 +799,6 @@ h2 {
 @media screen and (min-width: 1162px) {
   .p-card__img {
     aspect-ratio: 4/3;
-    width: 700px;
   }
 }
 .p-card__title {

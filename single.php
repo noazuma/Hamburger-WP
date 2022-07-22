@@ -6,7 +6,7 @@
 <main class="l-main">
     
     <div class="p-front--single">
-            <h1 class="p-front--top">h1 チーズバーガー
+            <h1 class="p-front--top"><?php wp_title(''); ?>
             </h1>
 
     </div> 

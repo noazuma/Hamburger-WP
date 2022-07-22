@@ -33,16 +33,20 @@
             <div class="p-card">
                 <h3 class="c-title__card p-card__title"><?php the_title(); ?></h3>
 
-                <h4 class="c-card__text p-card__sub-title">小見出しが入ります</h4>
+                <h4 class="c-card__text p-card__sub-title"><?php the_excerpt(); ?></h4>
 
                 <p class="c-card__text p-card__text">
+                <?php
+                    $content = get_the_content( '続きを読む' );
+                        print $content;
+                ?>
+                    <!-- テキストが入ります。テキストが入ります。
                     テキストが入ります。テキストが入ります。
                     テキストが入ります。テキストが入ります。
                     テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。
+                    テキストが入ります。テキストが入ります。 -->
                 </p>
-                    <buttom  class="c-button__card">
+                    <buttom  onclick="location.href='<?php the_permalink(); ?>'" class="c-button__card">
                         詳しくみる
                     </buttom>
             </div>
