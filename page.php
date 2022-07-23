@@ -7,7 +7,7 @@
 <main class="l-main">
     
     <div class="p-front--page">
-            <h1 class="p-front--top">ショップについて
+            <h1 class="p-front--top"><?php wp_title(''); ?>
             </h1>
 
     </div> 
