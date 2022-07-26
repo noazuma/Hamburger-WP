@@ -53,4 +53,15 @@ class custom_walker_main_menu extends Walker_Nav_Menu {
     }
 }
 
+// wp_paenaviのclass編集
+function custom_wp_pagenavi( $html ) {
+    $out = '';
+    $out = str_replace( "<div", "", $html );
+    $out = str_replace( "class='wp-pagenavi'>", "", $out );
+    $out = str_replace( "</div>", "", $out );
+    $out = str_replace( "<a", "<ul><a", $out );
+    $out = str_replace( "</a>", "</a></ul>", $out );
 
+    return '<nav class="p-pagination"><ul class="p-pagination-list">' . $out . '</ul></nav>';
+}
+    add_filter( 'wp_pagenavi', 'custom_wp_pagenavi' );
