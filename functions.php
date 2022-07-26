@@ -53,7 +53,7 @@ class custom_walker_main_menu extends Walker_Nav_Menu {
     }
 }
 
-// wp_paenaviのclass編集
+// wp_paegaviのclass編集
 function custom_wp_pagenavi( $html ) {
     $out = '';
     $out = str_replace( "<div", "", $html );
