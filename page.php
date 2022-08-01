@@ -17,7 +17,7 @@
 
 
     <article class="p-container p-container--single">
-                <h2 class="c-single c-title__single">見出しh2
+                <h2 class="c-single c-title__single"><?php wp_title(''); ?>
                     <p class="c-text--single">Pタグテキスト。Pタグテキスト。
                         Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
                         Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
