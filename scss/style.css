@@ -859,34 +859,24 @@ h2 {
     display: none;
   }
 }
-.wp-pagenavi__next {
+.wp-pagenavi .nextpostslink {
   padding: 40.4px 45px 31px 45px;
   display: flex;
   gap: 10px;
 }
 @media screen and (min-width: 700px) {
-  .wp-pagenavi__next {
+  .wp-pagenavi .nextpostslink {
     padding: 0;
   }
 }
-@media screen and (min-width: 1162px) {
-  .wp-pagenavi__next {
-    height: 30%;
-  }
-}
-.wp-pagenavi__back {
+.wp-pagenavi .previouspostslink {
   padding: 40.4px 45px 31px 45px;
   display: flex;
   gap: 10px;
 }
 @media screen and (min-width: 700px) {
-  .wp-pagenavi__back {
+  .wp-pagenavi .previouspostslink {
     padding: 0;
-  }
-}
-@media screen and (min-width: 1162px) {
-  .wp-pagenavi__back {
-    height: 30%;
   }
 }
 .wp-pagenavi__list {
