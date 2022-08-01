@@ -816,84 +816,89 @@ h2 {
   padding-right: 73px;
 }
 
-.p-pagination {
+.wp-pagenavi {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 @media screen and (min-width: 700px) {
-  .p-pagination {
+  .wp-pagenavi {
     justify-content: center;
     align-items: center;
+    padding: 0 0 60px 0;
+    gap: 15px;
   }
 }
-.p-pagination__page {
+.wp-pagenavi .pages {
   display: none;
 }
 @media screen and (min-width: 700px) {
-  .p-pagination__page {
+  .wp-pagenavi .pages {
     display: flex;
     white-space: nowrap;
     padding-right: 10px;
     font-size: 16px;
     font-family: "Roboto", sans-serif;
-    font-weight: bold;
+    border: none;
   }
 }
 @media screen and (min-width: 1162px) {
-  .p-pagination__page {
+  .wp-pagenavi .pages {
     padding-right: 20px;
   }
 }
-.p-pagination__text {
+.wp-pagenavi .page .current {
+  gap: 10px;
+}
+.wp-pagenavi__text {
   color: #707070;
   font-size: 16px;
   font-weight: regular;
 }
 @media screen and (min-width: 700px) {
-  .p-pagination__text {
+  .wp-pagenavi__text {
     display: none;
   }
 }
-.p-pagination__next {
+.wp-pagenavi__next {
   padding: 40.4px 45px 31px 45px;
   display: flex;
   gap: 10px;
 }
 @media screen and (min-width: 700px) {
-  .p-pagination__next {
+  .wp-pagenavi__next {
     padding: 0;
   }
 }
 @media screen and (min-width: 1162px) {
-  .p-pagination__next {
+  .wp-pagenavi__next {
     height: 30%;
   }
 }
-.p-pagination__back {
+.wp-pagenavi__back {
   padding: 40.4px 45px 31px 45px;
   display: flex;
   gap: 10px;
 }
 @media screen and (min-width: 700px) {
-  .p-pagination__back {
+  .wp-pagenavi__back {
     padding: 0;
   }
 }
 @media screen and (min-width: 1162px) {
-  .p-pagination__back {
+  .wp-pagenavi__back {
     height: 30%;
   }
 }
-.p-pagination__list {
+.wp-pagenavi__list {
   display: none;
 }
 @media screen and (min-width: 700px) {
-  .p-pagination__list {
+  .wp-pagenavi__list {
     display: flex;
     padding: 0px;
   }
 }
-.p-pagination__list-box {
+.wp-pagenavi__list-box {
   border: 0.7px solid;
   height: 35px;
   width: 35px;
@@ -901,11 +906,11 @@ h2 {
   display: inline-block;
   text-align: center;
 }
-.p-pagination__list-box :hover {
+.wp-pagenavi__list-box :hover {
   background-color: #3C2B1C;
   color: #fff;
 }
-.p-pagination__list-box a {
+.wp-pagenavi__list-box a {
   display: inline-block;
   padding: 6px;
   width: 100%;
