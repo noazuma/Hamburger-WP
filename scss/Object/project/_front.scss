@@ -65,19 +65,19 @@
     }
 
     &--single {
-        background-image: url(../img/main/single-br.svg);
+        // background-image: url(../img/main/single-br.svg);
         background-size: cover;
         height: 225px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         @include m.mq(tab) {
-            background-image: url(../img/main/single-br-tab.svg);
+            // background-image: url(../img/main/single-br-tab.svg);
             // background-position: center center;
             height: 500px;
         }
         @include m.mq(pc) {
-            background-image: url(../img/main/single-br-pc.svg);
+            // background-image: url(../img/main/single-br-pc.svg);
             // background-position: center center;
         }
     }

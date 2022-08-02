@@ -14,6 +14,10 @@
             align-items: center;
             padding: 0 0 60px 0;
             gap: 15px;
+            a:hover {
+                background-color:#3C2B1C;;
+                color: #fff;
+            }
         }
 
 .pages{
@@ -45,10 +49,7 @@
             margin: 12px;
             display: inline-block;
             text-align: center;
-            :hover {
-                background-color:#3C2B1C;;
-                color: #fff;
-            }
+            
         }
         }  
         
@@ -138,6 +139,10 @@
             }
 
     }
+.current {
+    background-color:#3C2B1C;;
+    color: #fff;
+}
 
 }
 
