@@ -30,13 +30,12 @@ function wpbeg_script() {
     $locale = apply_filters( 'theme_locale', $locale, 'wpbeg' );
     wp_enqueue_style( 'font-awesome', get_theme_file_uri ( '//font-awesome.css' ), array(), '4.7.0' );
     if( $locale == 'ja' ) {
-    wp_enqueue_style( 'wpbeg-mplus1p', '//fonts.googleapis.com/earlyaccess/mplus1p.css', array() );
-    }
+    wp_enqueue_style( 'wpbeg-mplus1p', '//fonts.googleapis.com/earlyaccess/mplus1p.css', array() ); };
     wp_enqueue_style( 'wpbeg-Sacramento', '//fonts.googleapis.com/css?family=Sacramento&amp;amp;subset=latin-ext', array() );
     wp_enqueue_style( 'wpbeg-normalize', get_theme_file_uri ( '/css/reset.css' ), array(), '4.5.0' );
     wp_enqueue_style( 'main-style', get_theme_file_uri ( '/scss/style.css' ), array(), '1.0.0' );
     wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.4.1.min.js' , '', '3.4.1', true );
-    wp_enqueue_script( 'js', get_theme_file_uri ('/JavaScript.js/script.js' ), array( 'jquery' ), '1.0.0', true );
+    wp_enqueue_script( 'js', get_theme_file_uri ('/JavaScript.js/script.js'), array( 'jquery' ), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'wpbeg_script' );
 
@@ -51,5 +50,5 @@ class custom_walker_main_menu extends Walker_Nav_Menu {
             $output .= '<li class="p-sidemenu__sub"><a href="'.$item->url.'">'.$item->title.'</a>';
         }
     }
-}
+};
 

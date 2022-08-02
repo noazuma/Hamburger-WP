@@ -18,11 +18,11 @@
 
         <p class="p-footer__cp">Copyright: RaiseTech</p>
     </div>
-
+    
 </footer>
 
 
 
-
+<?php wp_footer(); ?>
 </body>
 </html>

@@ -25,4 +25,7 @@
         height: 100%;
         background-color: rgba(27, 25, 25, 0.3);
     }
+    @include m.mq (pc){
+        display: none;
+    }
 }
