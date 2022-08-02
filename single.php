@@ -12,7 +12,7 @@
 <!-- メイン画像 -->
     <div class="p-front--single">
     <?php if(has_post_thumbnail()): ?>
-
+        <?php the_post_thumbnail('full',array('class' => 'p-front__img')); ?>
         <?php else: ?>
 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/main/single-br-pc.svg" alt="チーズバーガー" />
 <?php endif; ?>
