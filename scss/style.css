@@ -193,6 +193,7 @@ h2 {
   color: #707070;
   padding: 10px 40px;
   margin: 40px auto;
+  cursor: pointer;
 }
 .c-button--single {
   width: 100%;
@@ -540,6 +541,7 @@ h2 {
   }
 }
 .p-front--top {
+  position: absolute;
   font-size: 36px;
   padding: 0 0 0 26px;
 }
@@ -770,6 +772,9 @@ h2 {
   padding: 0 1.3rem;
 }
 .p-footer__shop {
+  color: #FFFFFF;
+}
+.p-footer a {
   color: #FFFFFF;
 }
 .p-footer__cp {

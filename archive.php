@@ -12,7 +12,6 @@
                 <p class="p-front__sub"><?php wp_title(''); ?></p>
             </h2>
         </div>    
-
     </div> 
 <!--メニュー  -->
     <article class="c-card">
@@ -32,61 +31,15 @@
             <?php endif; ?>
             <div class="p-card">
                 <h3 class="c-title__card p-card__title"><?php the_title(); ?></h3>
-
                 <h4 class="c-card__text p-card__sub-title"><?php the_excerpt(); ?></h4>
-
                 <p class="c-card__text p-card__text">
-                
-                    <!-- テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。 -->
+                <?php get_the_content() ?>
                 </p>
                     <button  onclick="location.href='<?php the_permalink(); ?>'" class="c-button__card">
                         詳しくみる
                     </button>
             </div>
         </figure>
-
-        <!-- <figure class="c-card__box">
-            <img  class="p-card__img" src="/img/cheese burger.svg" alt="チーズバーガー">
-            <div class="p-card">
-                <h3 class="c-title__card p-card__title">ダブルチーズバーガー</h3>
-
-                <h4 class="c-card__text p-card__sub-title">小見出しが入ります</h4>
-
-                <p class="c-card__text p-card__text">
-                    テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。
-                </p>
-                    <buttom  class="c-button__card">
-                        詳しくみる
-                    </buttom>
-            </div>
-        </figure>
-
-        <figure class="c-card__box">
-            <img  class="p-card__img" src="/img/cheese burger.svg" alt="チーズバーガー">
-            <div class="p-card">
-                <h3 class="c-title__card p-card__title">スペシャルチーズバーガー</h3>
-
-                <h4 class="c-card__text p-card__sub-title">小見出しが入ります</h4>
-
-                <p class="c-card__text p-card__text">
-                    テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。
-                </p>
-                    <buttom  class="c-button__card">
-                        詳しくみる
-                    </buttom>
-            </div> -->
             <?php endwhile;
             else:
                 echo '記事がありません';
@@ -96,7 +49,6 @@
         </figure>
         
     </article>
-<!--ページ送り  -->
 <?php wp_pagenavi(); ?>
 <!-- <div class="p-pagination">
     <div class="p-pagination__page">page 1/10</div>
@@ -117,11 +69,7 @@
     <a  href="#" class="p-pagination__next">
         <div class="p-pagination__text">次へ</div>
         &gt;&gt;</a>
-
-
-
 </div> -->
-
 </main>
 <!-- フッター -->
 <?php get_footer(); ?>

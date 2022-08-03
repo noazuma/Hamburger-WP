@@ -28,6 +28,7 @@
     }
 
     &--top {
+        position: absolute; //WP追加
         font-size: 36px;
         padding: 0 0 0 26px;
         @include m.mq(tab){

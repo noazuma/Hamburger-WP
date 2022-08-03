@@ -24,7 +24,7 @@ function custom_theme_support(){
 }
 add_action('after_setup_theme','custom_theme_support');
 
-
+//css,jQuery読み込み
 function wpbeg_script() {
     $locale = get_locale();
     $locale = apply_filters( 'theme_locale', $locale, 'wpbeg' );
