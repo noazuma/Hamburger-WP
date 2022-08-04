@@ -14,11 +14,9 @@
         </div>    
     </div> 
 
-    <h2>「<?php the_search_query(); ?>」の検索結果は<?php echo $wp_query->found_posts;?>件です</h2>
+    <h2>「<?php if(get_search_query()); ?>」の検索結果は<?php echo $wp_query->found_posts;?>件です</h2>
 <?php if(have_posts()): 
     while(have_posts()) : the_post(); ?>
-
-<!-- アーカイブページやトップページのループの中身を書く -->
 
 <?php endwhile; ?>
 <?php else : ?>
