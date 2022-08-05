@@ -21,9 +21,10 @@
 
     </div> 
 
-    <article class="p-container p-container--single">
-                <h2 class="c-single c-title__single">見出しh2
-                    <p class="c-text--single">Pタグテキスト。Pタグテキスト。
+    <article <?php $post_id = get_the_ID(); ?> <? post_class ('p-container p-container--single');?>>
+    <?php the_content(); ?>
+    <!-- <h2 class="c-single c-title__single">見出しh2 -->
+                    <!-- <p class="c-text--single">Pタグテキスト。Pタグテキスト。
                         Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
                         Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
                         Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
@@ -31,8 +32,8 @@
                         Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
                         Pタグテキスト。Pタグテキスト。
                     </p>
-                </h2>
-            <div class="c-single c-title__single">
+                </h2> -->
+            <!-- <div class="c-single c-title__single">
                 <h3 class="c-margin">見出しh3</h3>
                 <h4 class="c-margin">見出しh4</h4>
                 <h5 class="c-margin">見出しh5</h5>
@@ -176,7 +177,7 @@
     </table>
 
     <button type="button" class="c-button--single c-margin">ボタン</button>
-    <p class="c-margin c-text--bold">boldboldboldboldboldboldbold</p>
+    <p class="c-margin c-text--bold">boldboldboldboldboldboldbold</p> -->
 
     </article>
     
