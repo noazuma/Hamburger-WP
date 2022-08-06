@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <!-- header.phpを読み込むテンプレートタグ（インクルードタグ） -->
-<?php get_sidebar(); ?>
-<!-- sidebar.phpを読み込む -->
+
 
 <!--メニュー  -->
 <article class="p-branch c-grid">
@@ -81,6 +80,7 @@
     </section>
 </main>
 
-
+<?php get_sidebar(); ?>
+<!-- sidebar.phpを読み込む -->
 
 <?php get_footer(); ?>

@@ -101,7 +101,7 @@ h2 {
 }
 @media screen and (min-width: 1162px) {
   .l-sideber {
-    overflow: hidden;
+    overflow: visible;
     position: absolute;
   }
 }
@@ -1032,7 +1032,6 @@ h2 {
 
 .p-wrapper {
   min-height: 100%;
-  position: relative;
   height: 100%;
 }
 

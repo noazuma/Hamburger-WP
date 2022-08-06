@@ -1,7 +1,7 @@
 <!-- ヘッダー -->
 <?php get_header(); ?>
 <!-- サイドバー -->
-<?php get_sidebar(); ?>
+
 
 <!-- メイン画像 -->
 <main class="l-main">

@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 <!-- サイドバー -->
-<?php get_sidebar(); ?>
 
 <?php
     if(have_posts()):  
