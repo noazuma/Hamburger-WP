@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+
+.p-wrapper {
+    min-height: 100%;
+    position: relative;
+    height: 100%;
+}

@@ -10,14 +10,17 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-    <div class="c-cover"></div>
+<div class="p-wrapper">
+    <?php wp_body_open(); ?>
+        <div class="c-cover"></div>
 
-<!--ヘッダー  -->
-<header class="l-header">
-<h2 class="p-head__menu c-button--menu">Menu</h2>
+    <!--ヘッダー  -->
+    <header class="l-header">
+    <h2 class="p-head__menu c-button--menu">Menu</h2>
 
-<h1 class="p-head__title c-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-<?php get_search_form(); ?>
-</header>
+    <h1 class="p-head__title c-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+    <?php get_search_form(); ?>
+    </header>
+
+
 

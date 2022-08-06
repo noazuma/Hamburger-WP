@@ -18,6 +18,7 @@
 
     @include m.mq(pc) {
         overflow: hidden;
+        position: absolute;
     }
 
     &.open {

@@ -24,6 +24,7 @@
 <p>Topページに戻る場合は<a href="<?php echo home_url(); ?>">こちら</a>から戻ることができます。</p>
 <?php endif; ?>
 
+
 <!--メニュー  -->
     <article class="c-card">
                 <h3 class="c-title__archive"><?php single_cat_title(); ?>
@@ -56,9 +57,6 @@
                 echo '記事がありません';
             ?>
             <?php endif; ?>
-        </article>
-        </figure>
-        
     </article>
 <?php wp_pagenavi(); ?>
 </main>

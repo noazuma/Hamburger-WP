@@ -2,8 +2,14 @@
   font-family: "M PLUS 1", sans-serif;
 }
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   width: 100%;
+  height: 100%;
   background-color: #FFFDFA;
   min-width: 300px;
 }
@@ -96,6 +102,7 @@ h2 {
 @media screen and (min-width: 1162px) {
   .l-sideber {
     overflow: hidden;
+    position: absolute;
   }
 }
 .l-sideber.open {
@@ -1021,6 +1028,12 @@ h2 {
 }
 .p-table td:nth-child(1) {
   width: 33%;
+}
+
+.p-wrapper {
+  min-height: 100%;
+  position: relative;
+  height: 100%;
 }
 
 /*Foundation*/

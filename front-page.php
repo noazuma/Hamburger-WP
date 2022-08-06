@@ -1,7 +1,4 @@
 <?php get_header(); ?>
-
-<!-- サイドバー -->
-<?php get_sidebar(); ?>
 <!-- メイン画像 -->
 <main class="l-main">
     <div class="p-front--main">
@@ -86,7 +83,9 @@
         </p>
     </section>
 </main>
-<!-- フッター -->
+<?php get_sidebar(); ?>
+
+
 <?php get_footer(); ?>
 
 
