@@ -16,6 +16,7 @@ body {
 @media screen and (min-width: 1162px) {
   body {
     display: grid;
+    position: relative;
   }
 }
 
@@ -51,6 +52,9 @@ h2 {
   background-color: #9D8670;
   height: 150px;
   padding: 1.8rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 @media screen and (min-width: 1162px) {
   .l-footer {
@@ -102,7 +106,6 @@ h2 {
 @media screen and (min-width: 1162px) {
   .l-sideber {
     overflow: visible;
-    position: absolute;
   }
 }
 .l-sideber.open {
@@ -126,7 +129,6 @@ h2 {
     grid-row: 1/4;
     right: 0;
     position: static;
-    grid-template-rows: 367px;
     width: 100%;
   }
 }
@@ -1031,8 +1033,18 @@ h2 {
 }
 
 .p-wrapper {
-  min-height: 100%;
   height: 100%;
+  width: 100%;
+  position: relative;
+}
+@media screen and (min-width: 1162px) {
+  .p-wrapper {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1/4;
+    grid-template-columns: 1fr 19%;
+    grid-template-rows: 217px 1fr 1fr 150px;
+  }
 }
 
 /*Foundation*/

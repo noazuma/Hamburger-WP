@@ -23,7 +23,7 @@ body {
     min-width: 300px;
     @include m.mq(pc) {
         display: grid;
-
+        position: relative;
     }
 
 

@@ -20,8 +20,8 @@
             </div>
         </footer>  
         
-    </div>
     <?php get_sidebar(); ?>
+    </div>
     <?php wp_footer(); ?>
     </body>
 </html>
