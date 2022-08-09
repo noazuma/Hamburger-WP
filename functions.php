@@ -63,7 +63,7 @@ function custom_search($search, $wp_query) {
     if (!isset($wp_query->query_vars))
     return $search;
     
-    // ユーザー名とか、タグ名・カテゴリ名も検索対象に
+    // ユーザー名とか、タグ名・カテゴリ名も検索対象に　SQL
     $search_words = explode(' ', isset($wp_query->query_vars['s']) ? $wp_query->query_vars['s'] : '');
     if ( count($search_words) > 0 ) {
     $search = '';
@@ -73,11 +73,6 @@ function custom_search($search, $wp_query) {
         $search .= " AND (
             {$wpdb->posts}.post_title LIKE '{$search_word}'
             OR {$wpdb->posts}.post_content LIKE '{$search_word}'
-            -- OR {$wpdb->posts}.post_author IN (
-            --     SELECT distinct ID
-            --     FROM {$wpdb->users}
-            --     WHERE display_name LIKE '{$search_word}'
-                -- )
             OR {$wpdb->posts}.ID IN (
                 SELECT distinct r.object_id
                 FROM {$wpdb->term_relationships} AS r

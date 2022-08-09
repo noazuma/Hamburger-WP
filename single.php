@@ -3,8 +3,8 @@
 <!-- サイドバー -->
 
 <?php
-    if(have_posts()):  
-        while(have_posts()):
+    if(have_posts()):  //投稿データがあるかの条件分岐
+        while(have_posts()):  //表示する投稿データがあれば繰り返し処理開始
             the_post(); ?>
 
 <main class="l-main">
@@ -20,7 +20,7 @@
 
     </div> 
 
-    <article <?php $post_id = get_the_ID(); ?> <? post_class ('p-container p-container--single');?>>
+    <article <?php $post_id = get_the_ID(); ?><? post_class ('p-article p-container p-container--single');?>>
     <?php the_content(); ?>
     <!-- <h2 class="c-single c-title__single">見出しh2 -->
                     <!-- <p class="c-text--single">Pタグテキスト。Pタグテキスト。
@@ -186,5 +186,4 @@
     else:
 ?><p>表示する記事がありません</p>
 <?php endif; ?>
-<!-- フッター -->
 <?php get_footer(); ?>

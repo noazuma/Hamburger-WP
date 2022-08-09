@@ -2,3 +2,49 @@
 
 @use "../../Foundation/mixin" as m;
 @use "../../Foundation/variable" as v;
+
+
+.p-article {
+
+    h2 {
+        padding: 30px 0 30px 0;
+        font-size: 36px;
+    }
+    h3 {
+        padding: 30px 0 30px 0;
+        font-size: 26px;
+    }
+    h4,
+    h5,
+    h6 {
+        padding: 30px 0 30px 0;
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .wp-block-quote {
+        // border:#707070 ;
+        background-color: #F5F5F5;
+        padding: 30px 20px;
+        @include m.mq(tab){
+            padding: 50px;
+        }
+        a {
+            color: #4A6C9B;
+        }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+}

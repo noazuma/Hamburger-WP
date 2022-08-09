@@ -7,9 +7,10 @@
 
     </div> 
 <!--メニュー  -->
-    <article class="p-branch c-grid">
+<article class="p-branch c-grid">
         <div class="p-branch--menu p-container__take-out">
-            <h2 class="c-title__sub">Take OUT</h2>
+            <h2 class="c-title__sub">Take OUT
+            </h2>
             <span class="c-line p-branch--menu__line"></span>
                 <div class="c-grid">
                     <div class="p-branch--menu__box">
@@ -52,8 +53,59 @@
 
         </div>
 
-<!-- マップ -->
+
     </article>
+
+
+    <!-- <article class="p-branch c-grid">
+        <div class="p-branch--menu p-container__take-out">
+            <h2 class="c-title__sub">Take OUT
+            </h2>
+            <span class="c-line p-branch--menu__line"></span>
+                <div class="c-grid">
+                    <div class="p-branch--menu__box">
+                        <h3 class="c-title__in">Take OUT</h3><a href="#">
+                        <p class="p-branch__sub">当店のテイクアウトで利用できる商品を掲載しています
+                            当店のテイクアウトで利用できる商品を掲載しています
+                            当店のテイクアウトで利用できる商品を掲載しています
+                        </p></a>
+                    </div>
+                    <div class="p-branch--menu__box">
+                        <h3 class="c-title__in">Take OUT</h3><a href="#">
+                        <p class="p-branch__sub">当店のテイクアウトで利用できる商品を掲載しています
+                            当店のテイクアウトで利用できる商品を掲載しています
+                            当店のテイクアウトで利用できる商品を掲載しています
+                        </p></a>
+                    </div>
+                </div>
+        </div>
+                
+        <div class="p-branch--menu p-container__eat-in">        
+            <h2 class="c-title__sub">Eat In</h2>
+            <span class="c-line p-branch--menu__line"></span>
+                <div class="c-grid">
+                    <div class="p-branch--menu__box">
+                        <h3 class="c-title__in">Eat In</h3><a href="#">
+                        <p class="p-branch__sub">店内でお食事いただけるメニューです店内でお
+                            食事いただけるメニューです
+                            店内でお食事いただけるメニューです店内でお
+                            食事いただけるメニューです
+                        </p></a>
+                    </div>
+                    <div class="p-branch--menu__box">
+                        <h3 class="c-title__in">Eat In</h3><a href="#">
+                        <p class="p-branch__sub">店内でお食事いただけるメニューです店内でお
+                            食事いただけるメニューです
+                            店内でお食事いただけるメニューです店内でお
+                            食事いただけるメニューです</p></a>
+                    </div>
+                </div>       
+
+        </div>
+
+
+    </article> -->
+<!-- マップ -->
     <section class="p-access c-grid ">
         <div class="c-map__light"></div>
         <div class="c-map__strong"></div>
