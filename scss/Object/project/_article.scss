@@ -22,6 +22,7 @@
     }
     p {
         font-size: 16px;
+        margin-bottom: 30px;
     }
     .wp-block-quote {
         // border:#707070 ;
@@ -29,6 +30,9 @@
         padding: 30px 20px;
         @include m.mq(tab){
             padding: 50px;
+        }
+        cite{
+            line-height: 30px;
         }
         a {
             color: #4A6C9B;

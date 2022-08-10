@@ -1047,6 +1047,7 @@ h2 {
 }
 .p-article p {
   font-size: 16px;
+  margin-bottom: 30px;
 }
 .p-article .wp-block-quote {
   background-color: #F5F5F5;
@@ -1056,6 +1057,9 @@ h2 {
   .p-article .wp-block-quote {
     padding: 50px;
   }
+}
+.p-article .wp-block-quote cite {
+  line-height: 30px;
 }
 .p-article .wp-block-quote a {
   color: #4A6C9B;
