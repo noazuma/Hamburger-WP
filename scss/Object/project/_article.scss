@@ -36,10 +36,28 @@
         }
         a {
             color: #4A6C9B;
+
         }
     }
-    
+    pre {
+        padding: 50px;
+        background-color: #F5F5F5;
+    }
 
+
+    .wp-block-button {
+        a{
+            height: 100px;
+            width: 429px;
+            background-color: #F2EDE9;
+            color: #3C2A10;
+            // text-align: center;
+            line-height: 4rem;
+            border: solid #707070;
+        }
+        
+        
+    }
 
 
 
