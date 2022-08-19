@@ -7,6 +7,8 @@
 
     </div> 
 <!--メニュー  -->
+//<?php if(have_posts()): 
+    while(have_posts()) : the_post(); ?>//
 <article class="p-branch c-grid">
         <div class="p-branch--menu p-container__take-out">
             <h2 class="c-title__sub"><?php
@@ -52,9 +54,12 @@
                 </div>       
 
         </div>
-
-
     </article>
+    <?php endwhile;
+    else :?>
+    <?php endif; ?>
+    
+            
 
 
     <!-- <article class="p-branch c-grid">
