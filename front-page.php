@@ -6,9 +6,7 @@
         <h2 class="p-front__title"><?php bloginfo( 'description' ); ?></h2>
 
     </div> 
-<!--メニュー  -->
-//<?php if(have_posts()): 
-    while(have_posts()) : the_post(); ?>//
+<!--メニュー -->
 <article class="p-branch c-grid">
         <div class="p-branch--menu p-container__take-out">
             <h2 class="c-title__sub"><?php
@@ -20,7 +18,7 @@
             <span class="c-line p-branch--menu__line"></span>
                 <div class="c-grid">
                     <div class="p-branch--menu__box">
-                        <h3 class="c-title__in">Take OUT</h3><a href="#">
+                        <h3 class="c-title__in"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h3><a href="#">
                         <p class="p-branch__sub"><?php echo category_description(6); ?>
                         </p></a>
                     </div>
@@ -55,9 +53,6 @@
 
         </div>
     </article>
-    <?php endwhile;
-    else :?>
-    <?php endif; ?>
     
             
 
