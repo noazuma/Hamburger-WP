@@ -140,6 +140,9 @@ h2 {
   font-size: 41px;
   margin: 12px auto auto 13px;
 }
+.c-title__sub a {
+  color: #fff;
+}
 .c-title__in {
   font-size: 22px;
   margin: 0.5rem;
