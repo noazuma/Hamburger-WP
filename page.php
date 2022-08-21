@@ -24,7 +24,7 @@
     
 
 
-    <article class="p-container p-container--single">
+    <!-- <article class="p-container p-container--single">
                 <h2 class="c-single c-title__single"><?php wp_title(''); ?>
                     <p class="c-text--single">Pタグテキスト。Pタグテキスト。
                         Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
@@ -181,7 +181,7 @@
     <button type="button" class="c-button--single c-margin">ボタン</button>
     <p class="c-margin c-text--bold">boldboldboldboldboldboldbold</p>
 
-    </article>
+    </article> -->
 
 </main>
 <?php endwhile;

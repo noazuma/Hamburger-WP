@@ -27,7 +27,6 @@
                     </div>
                     <div class="p-branch--menu__box">
                         <h3 class="c-title__in"><a href="<?php the_permalink(46); ?>">
-                        
                         <?php echo get_the_title( 46 ); ?>
 
                     </h3><a href="#">
@@ -48,12 +47,18 @@
             <span class="c-line p-branch--menu__line"></span>
                 <div class="c-grid">
                     <div class="p-branch--menu__box">
-                        <h3 class="c-title__in">Eat In</h3><a href="#">
+                        <h3 class="c-title__in"><a href="<?php the_permalink(23); ?>">
+                        <?php echo get_the_title( 23 ); ?>
+                    </h3>
+                    <a href="#">
                         <p class="p-branch__sub"><?php echo category_description(5); ?>
                         </p></a>
                     </div>
                     <div class="p-branch--menu__box">
-                        <h3 class="c-title__in">Eat In</h3><a href="#">
+                        <h3 class="c-title__in"><a href="<?php the_permalink(40); ?>">
+                        <?php echo get_the_title( 40 ); ?>
+                    </h3>
+                    <a href="#">
                         <p class="p-branch__sub"><?php echo category_description(5); ?>
                         </p></a>
                     </div>
