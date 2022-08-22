@@ -90,7 +90,7 @@ function custom_search($search, $wp_query) {
     return $search;
     }
     add_filter('posts_search','custom_search', 10, 2);
-    
+
     //pタグ自動生成を止める
     remove_filter('category_description','wpautop');
     remove_filter('tag_description','wpautop');
