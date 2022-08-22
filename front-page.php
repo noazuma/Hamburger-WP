@@ -72,12 +72,12 @@
         <div class="c-map__strong"></div>
         <h2 class="c-title__map"><?php echo get_the_title( 198 ); ?></h2>
         <span class="c-line__access"></span>
-        <p class="p-access__text" >
+        <div class="p-access__text" >
         <?php
     $page = get_post( 198 );//「198」はページID
     echo $page->post_content;
 ?>
-        </p>
+        </div>
     </section>
 </main>
 
