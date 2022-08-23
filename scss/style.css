@@ -785,10 +785,17 @@ h2 {
   font-size: 20px;
   justify-content: center;
   margin-top: 0%;
-  padding: 0 1.3rem;
+  align-items: center;
 }
 .p-footer__shop {
   color: #FFFFFF;
+  display: flex;
+  padding: 0;
+}
+.p-footer__shop li + li {
+  display: inline-block;
+  border-left: solid 3px #FFF;
+  margin: 0 10px 0 0;
 }
 .p-footer a {
   color: #FFFFFF;
@@ -798,6 +805,8 @@ h2 {
   font-size: 14px;
   font-weight: regular;
   text-align: center;
+  display: block;
+  align-items: center;
 }
 
 .p-card {
