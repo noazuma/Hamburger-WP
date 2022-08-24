@@ -787,18 +787,26 @@ h2 {
   margin-top: 0%;
   align-items: center;
 }
+.p-footer #menu-item-87 {
+  position: relative;
+}
+.p-footer #menu-item-86:before {
+  display: block;
+  content: "";
+  height: 1.2em;
+  border-left: 2px solid #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
 .p-footer__shop {
   color: #FFFFFF;
   display: flex;
-  padding: 0;
 }
-.p-footer__shop li + li {
-  display: inline-block;
-  border-left: solid 3px #FFF;
-  margin: 0 10px 0 0;
-}
-.p-footer a {
+.p-footer__shop a {
   color: #FFFFFF;
+  padding: 0 20px 0 20px;
 }
 .p-footer__cp {
   color: #FFFFFF;
