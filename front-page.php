@@ -71,15 +71,16 @@
         <div class="c-map__light"></div>
         <div class="c-map__strong"></div>
         
-        <h2 class="c-title__map"><?php
-    $page_id = get_page_by_path('access'); ?> 
+        <h2 class="c-title__map"><a href="<?php echo home_url('/access');?>"></a><?php
+    $page_id = get_page_by_path('access'); //固定ページのスラッグ名を入れます 
+    $page = get_post( $page_id );
+    echo $page -> post_title; //タイトルを取得したい時?>
+    
     </h2>
-    <!-- //固定ページのスラッグ名を入れます -->
         <span class="c-line__access"></span>
         <p class="p-access__text" >
-        <?php $page = get_post( $page_id );
-     echo $page -> post_title;    //タイトルを取得したい時はこちら
-    echo $page -> post_excerpt;  //抜粋文を取得したい時はこちら
+        <?php     
+    echo $page -> post_excerpt;  //抜粋文を取得したい時
     ?>
     </p>
     </section>
