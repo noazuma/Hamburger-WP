@@ -70,14 +70,18 @@
     <section class="p-access c-grid ">
         <div class="c-map__light"></div>
         <div class="c-map__strong"></div>
-        <h2 class="c-title__map"><?php echo get_the_title( 198 ); ?></h2>
+        
+        <h2 class="c-title__map"><?php
+    $page_id = get_page_by_path('access'); ?> 
+    </h2>
+    <!-- //固定ページのスラッグ名を入れます -->
         <span class="c-line__access"></span>
-        <div class="p-access__text" >
-        <?php
-    $page = get_post( 198 );//「198」はページID
-    echo $page->post_content;
-?>
-        </div>
+        <p class="p-access__text" >
+        <?php $page = get_post( $page_id );
+     echo $page -> post_title;    //タイトルを取得したい時はこちら
+    echo $page -> post_excerpt;  //抜粋文を取得したい時はこちら
+    ?>
+    </p>
     </section>
 </main>
 

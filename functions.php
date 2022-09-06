@@ -95,3 +95,13 @@ function custom_search($search, $wp_query) {
     remove_filter('category_description','wpautop');
     remove_filter('tag_description','wpautop');
     remove_filter('term_description','wpautop');
+
+    //抜粋を固定ページで使用
+    add_post_type_support( 'page', 'excerpt' );
+    //抜粋の...を消す
+    if (!function_exists('custom_excerpt_more')) {
+        function custom_excerpt_more($more) {
+            return '';
+        }
+    }
+    add_filter('excerpt_more', 'custom_excerpt_more');
