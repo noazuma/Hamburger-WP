@@ -73,9 +73,11 @@
         
         <h2 class="c-title__map"><a href="<?php echo home_url('/access');?>"></a><?php
     $page_id = get_page_by_path('access'); //固定ページのスラッグ名を入れます 
+
     $page = get_post( $page_id );
-    echo $page -> post_title; //タイトルを取得したい時?>
-    
+    echo $page -> post_title; //タイトルを取得したい時
+    ?>
+
     </h2>
         <span class="c-line__access"></span>
         <p class="p-access__text" >
