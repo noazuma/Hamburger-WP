@@ -8,7 +8,7 @@
     </div> 
 <!--メニュー -->
 <article class="p-branch c-grid">
-        <div class="p-branch--menu p-container__take-out">
+    <div class="p-branch--menu p-container__take-out">
         <h2 class="c-title__sub"><a  href="<?php echo esc_url( get_category_link( 6 ) ); ?>">
         <?php                            
         $category = get_the_category();
@@ -19,18 +19,18 @@
             
             <span class="c-line p-branch--menu__line"></span>
             <?php
-//$argsのプロパティを変えていく
-$args = array(
-    'post_type' => 'post', 
-    'posts_per_page' => 1,
-    'orderby' => 'rand' //ランダム表示
-);
+                //$argsのプロパティを変えていく
+                $args = array(
+                    'post_type' => 'post', 
+                    'posts_per_page' => 1,
+                    'orderby' => 'rand' //ランダム表示
+                );
 
-$the_query = new WP_Query($args);
-if ($the_query->have_posts()) :
-    while ($the_query->have_posts()) : $the_query->the_post();
+                $the_query = new WP_Query($args);
+                if ($the_query->have_posts()) :
+                    while ($the_query->have_posts()) : $the_query->the_post();
     
-  /* ループ内の記述 */
+                        /* ループ内の記述 */
 
     endwhile;
 endif;
@@ -83,8 +83,8 @@ wp_reset_postdata();
                     </div>
                 </div>       
 
-        </div>
-    </article>            
+    </div>
+</article>            
 <!-- マップ -->
     <section class="p-access c-grid ">
         <div class="c-map__light"></div>
