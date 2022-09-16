@@ -6,17 +6,21 @@
 
 
 .l-footer {
-    background-color: #9D8670;
+    background-image: url(../img/footer/sp-footer.jpg);
     height: 150px;
     padding: 1.8rem;
     position: absolute;
     width: 100%;
     bottom: 0;
+    background-size: cover;
 
 
-
+    @include m.mq(tab) {
+    background-image: url(../img/footer/tab-fooer.jpg);
+    }
 
     @include m.mq(pc) {
+        background-image: url(../img/footer/pc-fooer.jpg);
         display: grid;
         grid-column: 1/5;
         grid-row: 4/5;
