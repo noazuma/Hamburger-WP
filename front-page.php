@@ -9,21 +9,25 @@
 <!--メニュー -->
 <article class="p-branch c-grid">
     <div class="p-branch--menu p-container__take-out">
-        <h2 class="c-title__sub"><a  href="<?php echo esc_url( get_category_link( 6 ) ); ?>">
-        <?php                            
-        $category = get_the_category();
-        $cat_name = $category[1]->cat_name;
-        echo $cat_name;
+        <h2 class="c-title__sub">
+        <?php
+            // 指定したカテゴリーの ID を取得
+            $category_id = get_cat_ID( 'Take Out' );
+            // このカテゴリーの URL を取得
+            $category_link = get_category_link( $category_id );
         ?>
+            <!-- このカテゴリーへのリンクを出力 -->
+            <a href="<?php echo esc_url( $category_link ); ?>" title="Take Out">Take Out</a>
         </h2>
             
             <span class="c-line p-branch--menu__line"></span>
             <?php
                 //$argsのプロパティを変えていく
                 $args = array(
-                    'post_type' => 'post', 
-                    'posts_per_page' => 1,
-                    'orderby' => 'rand' //ランダム表示
+                    // 'category' => ''
+                    // 'post_type' => 'post', 
+                    // 'posts_per_page' => 1,
+                    // 'orderby' => 'rand' //ランダム表示
                 );
 
                 $the_query = new WP_Query($args);
@@ -45,29 +49,29 @@ wp_reset_postdata();
                     <div class="p-branch--menu__box">
                         <h3 class="c-title__in"><a href="<?php the_permalink(46); ?>">
                         <?php echo get_the_title( 46 ); ?>
-
                     </h3><a href="#">
                         <p class="p-branch__sub">
-                        
                         <?php echo category_description(6); ?>
                         </p></a>
                     </div>
                 </div>
         </div>
-                
         <div class="p-branch--menu p-container__eat-in">        
             <h2 class="c-title__sub">
-            <a  href="<?php echo esc_url( get_category_link( 5 ) ); ?>">
-            <? $category = get_the_category();
-                $cat_name = $category[0]->cat_name;
-                echo $cat_name;
-            ?>
+                <?php
+                    // 指定したカテゴリーの ID を取得
+                    $category_id = get_cat_ID( 'Eat In' );
+                    // このカテゴリーの URL を取得
+                    $category_link = get_category_link( $category_id );
+                ?>
+                    <!-- このカテゴリーへのリンクを出力 -->
+                    <a href="<?php echo esc_url( $category_link ); ?>" title="Eat In">Eat In</a>
             </h2>
             <span class="c-line p-branch--menu__line"></span>
                 <div class="c-grid">
                     <div class="p-branch--menu__box">
                         <h3 class="c-title__in"><a href="<?php the_permalink(23); ?>">
-                        <?php echo get_the_title( 23 ); ?>
+                        <?php echo get_the_title(  ); ?>
                     </h3>
                     <a href="#">
                         <p class="p-branch__sub"><?php echo category_description(5); ?>
@@ -82,7 +86,7 @@ wp_reset_postdata();
                         </p></a>
                     </div>
                 </div>       
-
+            
     </div>
 </article>            
 <!-- マップ -->
