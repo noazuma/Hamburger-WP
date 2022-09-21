@@ -106,8 +106,5 @@ function custom_search($search, $wp_query) {
     }
     add_filter('excerpt_more', 'custom_excerpt_more');
 
-//     //スラッグの取得
-// $page = get_post( get_the_ID() );
-// $slug = $page->post_name;
 
 

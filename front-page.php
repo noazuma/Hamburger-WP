@@ -21,39 +21,33 @@
         </h2>
             
             <span class="c-line p-branch--menu__line"></span>
-            <?php
-                //$argsのプロパティを変えていく
-                $args = array(
-                    // 'category' => ''
-                    // 'post_type' => 'post', 
-                    // 'posts_per_page' => 1,
-                    // 'orderby' => 'rand' //ランダム表示
-                );
-
-                $the_query = new WP_Query($args);
-                if ($the_query->have_posts()) :
-                    while ($the_query->have_posts()) : $the_query->the_post();
-    
-                        /* ループ内の記述 */
-
-    endwhile;
-endif;
-wp_reset_postdata();
-?>
                 <div class="c-grid">
-                    <div class="p-branch--menu__box">
+                <?php
+    //$argsのプロパティを変更することでカスタマイズ
+    $args = array(
+        'post_type'      => 'post', 
+        'posts_per_page' => 2,
+        'no_found_rows'  => true,  //ページャー利用時はfalseに。
+        'orderby' => 'rand' //ランダム表示
+    );
+
+    $wp_query = new WP_Query( $args );
+    if ( $wp_query -> have_posts() ) :
+        while ( $wp_query -> have_posts() ) : $wp_query -> the_post();?>
+            
+        
+        <div class="p-branch--menu__box">
                         <h3 class="c-title__in"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h3><a href="#">
-                        <p class="p-branch__sub"><?php echo category_description(6); ?>
+                        <p class="p-branch__sub"><?php the_excerpt(); ?>
                         </p></a>
                     </div>
-                    <div class="p-branch--menu__box">
-                        <h3 class="c-title__in"><a href="<?php the_permalink(46); ?>">
-                        <?php echo get_the_title( 46 ); ?>
-                    </h3><a href="#">
-                        <p class="p-branch__sub">
-                        <?php echo category_description(6); ?>
-                        </p></a>
-                    </div>
+<?php
+        endwhile;
+    endif;
+    wp_reset_postdata();
+?>
+
+                    
                 </div>
         </div>
         <div class="p-branch--menu p-container__eat-in">        
@@ -68,27 +62,37 @@ wp_reset_postdata();
                     <a href="<?php echo esc_url( $category_link ); ?>" title="Eat In">Eat In</a>
             </h2>
             <span class="c-line p-branch--menu__line"></span>
-                <div class="c-grid">
+            <div class="c-grid">
+                <?php
+    //$argsのプロパティを変更することでカスタマイズ
+    $args = array(
+        'post_type'      => 'post', 
+        'posts_per_page' => 2,
+        'no_found_rows'  => true,  //ページャー利用時はfalseに。
+        'orderby' => 'rand' //ランダム表示
+    );
+
+    $wp_query = new WP_Query( $args );
+    if ( $wp_query -> have_posts() ) :
+        while ( $wp_query -> have_posts() ) : $wp_query -> the_post();?>
+
                     <div class="p-branch--menu__box">
-                        <h3 class="c-title__in"><a href="<?php the_permalink(23); ?>">
-                        <?php echo get_the_title(  ); ?>
+                        <h3 class="c-title__in"><a href="<?php the_permalink(); ?>">
+                        <?php the_title(); ?>
                     </h3>
                     <a href="#">
-                        <p class="p-branch__sub"><?php echo category_description(5); ?>
+                        <p class="p-branch__sub"><?php the_excerpt(); ?>
                         </p></a>
                     </div>
-                    <div class="p-branch--menu__box">
-                        <h3 class="c-title__in"><a href="<?php the_permalink(40); ?>">
-                        <?php echo get_the_title( 40 ); ?>
-                    </h3>
-                    <a href="#">
-                        <p class="p-branch__sub"><?php echo category_description(5); ?>
-                        </p></a>
-                    </div>
-                </div>       
-            
-    </div>
+<?php
+        endwhile;
+    endif;
+    wp_reset_postdata();
+?>
+            </div>       
+        </div>
 </article>            
+
 <!-- マップ -->
     <section class="p-access c-grid ">
         <div class="c-map__light"></div>
