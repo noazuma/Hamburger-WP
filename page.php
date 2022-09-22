@@ -22,7 +22,8 @@
     <article <?php $post_id = get_the_ID(); ?><? post_class ('p-article p-container p-container--single');?>>
     <?php the_content(); ?>
     </article>
-    
+    <!-- Themacheckエラー -->
+    <?php wp_link_pages(); ?>
 </main>
 
 <?php endwhile;
