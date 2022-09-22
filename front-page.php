@@ -25,8 +25,8 @@
                 <?php
     //$argsのプロパティを変更することでカスタマイズ
     $args = array(
-        'post_type'      => 'post', 
-        'posts_per_page' => 2,
+        'post_type'      => 'post',
+        'posts_per_page' => 2,//表示する枚数。
         'no_found_rows'  => true,  //ページャー利用時はfalseに。
         'orderby' => 'rand' //ランダム表示
     );
@@ -34,19 +34,34 @@
     $wp_query = new WP_Query( $args );
     if ( $wp_query -> have_posts() ) :
         while ( $wp_query -> have_posts() ) : $wp_query -> the_post();?>
-            
-        
+        <!-- ループ処理 -->
         <div class="p-branch--menu__box">
                         <h3 class="c-title__in"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h3><a href="#">
                         <p class="p-branch__sub"><?php the_excerpt(); ?>
                         </p></a>
                     </div>
 <?php
-        endwhile;
-    endif;
+        endwhile; 
+    else: ?>     <!-- ループ処理の内容がない時 -->
+        <div class="p-branch--menu__box">
+        <h3 class="c-title__in">Take OUT</h3><a href="#">
+        <p class="p-branch__sub">当店のテイクアウトで利用できる商品を掲載しています
+            当店のテイクアウトで利用できる商品を掲載しています
+            当店のテイクアウトで利用できる商品を掲載しています
+        </p></a>
+    </div>
+    <div class="p-branch--menu__box">
+        <h3 class="c-title__in">Take OUT</h3><a href="#">
+        <p class="p-branch__sub">当店のテイクアウトで利用できる商品を掲載しています
+            当店のテイクアウトで利用できる商品を掲載しています
+            当店のテイクアウトで利用できる商品を掲載しています
+        </p></a>
+    </div>
+
+<?php    endif;
     wp_reset_postdata();
 ?>
-
+            
                     
                 </div>
         </div>
@@ -75,7 +90,7 @@
     $wp_query = new WP_Query( $args );
     if ( $wp_query -> have_posts() ) :
         while ( $wp_query -> have_posts() ) : $wp_query -> the_post();?>
-
+                    <!-- ループ処理 -->
                     <div class="p-branch--menu__box">
                         <h3 class="c-title__in"><a href="<?php the_permalink(); ?>">
                         <?php the_title(); ?>
@@ -86,7 +101,24 @@
                     </div>
 <?php
         endwhile;
-    endif;
+    else: ?>      <!-- ループ処理の内容がない時 -->
+        <div class="p-branch--menu__box">
+        <h3 class="c-title__in">Eat In</h3><a href="#">
+        <p class="p-branch__sub">店内でお食事いただけるメニューです店内でお
+            食事いただけるメニューです
+            店内でお食事いただけるメニューです店内でお
+            食事いただけるメニューです
+        </p></a>
+    </div>
+    <div class="p-branch--menu__box">
+        <h3 class="c-title__in">Eat In</h3><a href="#">
+        <p class="p-branch__sub">店内でお食事いただけるメニューです店内でお
+            食事いただけるメニューです
+            店内でお食事いただけるメニューです店内でお
+            食事いただけるメニューです</p></a>
+    </div>
+
+<?php   endif;
     wp_reset_postdata();
 ?>
             </div>       
