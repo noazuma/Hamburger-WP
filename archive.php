@@ -50,26 +50,6 @@
         
     </article>
 <?php wp_pagenavi(); ?>
-<!-- <div class="p-pagination">
-    <div class="p-pagination__page">page 1/10</div>
-    <a  href="#" class="p-pagination__back">&lt;&lt;
-        <div class="p-pagination__text">前へ</div>
-    </a>
-    <ul class="p-pagination__list">
-        <li class="p-pagination__list-box"><a href="#">1</a></li>
-        <li class="p-pagination__list-box"><a href="#">2</a</li>
-        <li class="p-pagination__list-box"><a href="#">3</a></li>
-        <li class="p-pagination__list-box"><a href="#">4</a></li>
-        <li class="p-pagination__list-box"><a href="#">5</a></li>
-        <li class="p-pagination__list-box"><a href="#">6</a></li>
-        <li class="p-pagination__list-box"><a href="#">7</a></li>
-        <li class="p-pagination__list-box"><a href="#">8</a></li>
-        <li class="p-pagination__list-box"><a href="#">9</a></li>
-    </ul>
-    <a  href="#" class="p-pagination__next">
-        <div class="p-pagination__text">次へ</div>
-        &gt;&gt;</a>
-</div> -->
 </main>
 <!-- フッター -->
 <?php get_footer(); ?>

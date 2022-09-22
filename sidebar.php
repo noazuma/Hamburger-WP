@@ -22,35 +22,5 @@
     ) ); 
 ?>
     
-        <!-- <li class="p-sidemenu__main"><a>バーガー</a></li>
-            <ul>
-                <li class="p-sidemenu__sub">ハンバーガー</li>
-                <li class="p-sidemenu__sub">チーズバーガー</li>
-                <li class="p-sidemenu__sub">テリヤキバーガー</li>
-                <li class="p-sidemenu__sub">アボカドバーガー</li>
-                <li class="p-sidemenu__sub">フィッシュバーガー</li>
-                <li class="p-sidemenu__sub">ベーコンバーガー</li>
-                <li class="p-sidemenu__sub">チキンバーガー</li>
-            </ul>
-        
-        <li class="p-sidemenu__main"><a>サイド</a></li>
-            <ul>
-                <li class="p-sidemenu__sub">ポテト</li>
-                <li class="p-sidemenu__sub">サラダ</li>
-                <li class="p-sidemenu__sub">ナゲット</li>
-                <li class="p-sidemenu__sub">コーン</li>
-            </ul>
-        
-        <li class="p-sidemenu__main"><a>ドリンク</a></li>
-            <ul>
-                <li class="p-sidemenu__sub">コーラ</li>
-                <li class="p-sidemenu__sub">ファンタ</li>
-                <li class="p-sidemenu__sub">オレンジ</li>
-                <li class="p-sidemenu__sub">アップル</li>
-                <li class="p-sidemenu__sub">紅茶（Ice/Hot）</li>
-                <li class="p-sidemenu__sub">コーヒー（Ice/Hot）</li>
-            </ul> -->
-        
-    <!-- </ul> -->
 </nav>
 </sidebar>

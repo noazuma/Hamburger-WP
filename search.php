@@ -20,9 +20,9 @@
 <?php endwhile; ?>
 <?php else : ?>
 <h3>「<?php the_search_query(); ?>」はありませんでした</h3>
-<p>Topページに戻る場合は<a href="<?php echo home_url(); ?>">こちら</a>から戻ることができます。</p>
+<p>Topページに戻る場合は<a href="<?php echo esc_url (home_url()); ?>">こちら</a>から戻ることができます。</p>
 <?php endif; ?>
-
+<!-- home_urlにはエスケープが必要 -->
 
 <!--メニュー  -->
     <article class="c-card">

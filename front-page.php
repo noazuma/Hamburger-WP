@@ -131,7 +131,7 @@
         <div class="c-map__strong"></div>
         
         <h2 class="c-title__map" ><a href="
-        <?php echo home_url('/access');?>"><?php
+        <?php echo esc_url (home_url('/access'));?>"><?php
     $page_id = get_page_by_path('access'); //固定ページのスラッグ名を入れます 
     $page = get_post( $page_id );
     echo $page -> post_title; //タイトルを取得したい時

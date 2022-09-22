@@ -11,7 +11,7 @@ function custom_theme_support(){
     ));
     add_theme_support('post-thumbnails');// アイキャッチ画像の有効化
     add_theme_support('title-tag');//titleタグのサポートを許可
-    add_theme_support('menus');
+    // add_theme_support('menus');　　※使わない　Themacheckでエラーになる。
     add_theme_support( 'automatic-feed-links' );
     register_nav_menus(array(
         // 'footer_nav' => esc_html__('footer', 'フッター'),
@@ -28,13 +28,13 @@ add_action('after_setup_theme','custom_theme_support');
 function wpbeg_script() {
     $locale = get_locale();
     $locale = apply_filters( 'theme_locale', $locale, 'wpbeg' );
-    wp_enqueue_style( 'font-awesome', get_theme_file_uri ( '//font-awesome.css' ), array(), '4.7.0' );
+    // wp_enqueue_style( 'font-awesome', get_theme_file_uri (),'/css/fontawesome.css', array(), '6.2.0',true );
     if( $locale == 'ja' ) {
     wp_enqueue_style( 'wpbeg-mplus1p', '//fonts.googleapis.com/earlyaccess/mplus1p.css', array() ); };
     wp_enqueue_style( 'wpbeg-Sacramento', '//fonts.googleapis.com/css?family=Sacramento&amp;amp;subset=latin-ext', array() );
     wp_enqueue_style( 'wpbeg-normalize', get_theme_file_uri ( '/css/reset.css' ), array(), '4.5.0' );
     wp_enqueue_style( 'main-style', get_theme_file_uri ( '/scss/style.css' ), array(), '1.0.0' );
-    wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.4.1.min.js' , '', '3.4.1', true );
+    wp_enqueue_script( 'jquery', get_theme_file_uri() , '/JavaScript.js/jquery-3.6.1.min',array(), '3.6.1', true );
     wp_enqueue_script( 'js', get_theme_file_uri ('/JavaScript.js/script.js'), array( 'jquery' ), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'wpbeg_script' );
@@ -105,6 +105,17 @@ function custom_search($search, $wp_query) {
         }
     }
     add_filter('excerpt_more', 'custom_excerpt_more');
+
+    //SVGをアップロード
+function add_file_types_to_uploads($file_types){
+
+    $new_filetypes = array();
+    $new_filetypes['svg'] = 'image/svg+xml';
+    $file_types = array_merge($file_types, $new_filetypes );
+
+    return $file_types;
+}
+add_action('upload_mimes', 'add_file_types_to_uploads');
 
 
 
