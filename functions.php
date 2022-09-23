@@ -28,7 +28,7 @@ add_action('after_setup_theme','custom_theme_support');
 function wpbeg_script() {
     $locale = get_locale();
     $locale = apply_filters( 'theme_locale', $locale, 'wpbeg' );
-    // wp_enqueue_style( 'font-awesome', get_theme_file_uri (),'/css/fontawesome.css', array(), '6.2.0',true );
+    wp_enqueue_style( 'font-awesome', get_theme_file_uri (),'/css/fontawesome.css',array(), );
     if( $locale == 'ja' ) {
     wp_enqueue_style( 'wpbeg-mplus1p', '//fonts.googleapis.com/earlyaccess/mplus1p.css', array() ); };
     wp_enqueue_style( 'wpbeg-Sacramento', '//fonts.googleapis.com/css?family=Sacramento&amp;amp;subset=latin-ext', array() );
