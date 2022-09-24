@@ -834,6 +834,7 @@ h2 {
   background-color: #3C2B1C;
   padding-top: 32px;
   padding-left: 17px;
+  padding-right: 17px;
   display: flex;
   flex-direction: column;
 }
