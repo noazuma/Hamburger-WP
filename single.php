@@ -13,7 +13,7 @@
     <?php if(has_post_thumbnail()): ?>
         <?php the_post_thumbnail('full',array('class' => 'p-front__img')); ?>
         <?php else: ?>
-<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/main/single-br-pc.svg" alt="チーズバーガー" />
+<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/main/page_pc.png" alt="ショップ画像" />
 <?php endif; ?>
             <h1 class="p-front--top"><?php wp_title(''); ?>
             </h1>

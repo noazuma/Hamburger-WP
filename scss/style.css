@@ -841,6 +841,7 @@ h2 {
   .p-card {
     display: grid;
     grid-column: 4/5;
+    width: 50%;
   }
 }
 .p-card__img {
@@ -1001,6 +1002,14 @@ h2 {
 .wp-pagenavi .current {
   background-color: #3C2B1C;
   color: #fff;
+}
+.wp-pagenavi .extend {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .wp-pagenavi .extend {
+    display: inline-block;
+  }
 }
 
 .p-quotation {

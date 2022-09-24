@@ -38,7 +38,7 @@
             <?php if(has_post_thumbnail()): ?>
             <?php the_post_thumbnail('large',array('class' => 'p-card__img')); ?>
             <?php else: ?>
-            <img class="p-card__img"  src="/img/cheese_burger.svg" alt="チーズバーガー">
+            <img class="p-card__img"  src="/img/burg/cheese_burger.png" alt="チーズバーガー">
             <?php endif; ?>
             <div class="p-card">
                 <h3 class="c-title__card p-card__title"><?php the_title(); ?></h3>
