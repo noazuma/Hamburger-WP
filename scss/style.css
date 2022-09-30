@@ -799,10 +799,6 @@ h2 {
   margin-top: 0%;
   align-items: center;
 }
-.p-footer #menu-item-87 {
-  position: relative;
-  padding: 0;
-}
 .p-footer #menu-item-86:before {
   display: block;
   content: "";
@@ -816,6 +812,7 @@ h2 {
 .p-footer__shop {
   color: #FFFFFF;
   display: flex;
+  position: relative;
 }
 .p-footer__shop a {
   color: #FFFFFF;

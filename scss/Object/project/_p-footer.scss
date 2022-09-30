@@ -10,11 +10,12 @@
     justify-content: center;
     margin-top: 0%;
     align-items: center;
-    
-    #menu-item-87 {
-        position: relative;
-        padding: 0;
-    }
+
+    // #menu-item-224 {
+    //     position: relative;
+    //     padding: 0;
+    // }
+
     #menu-item-86:before {
         display: block;
         content: "";
@@ -25,13 +26,14 @@
         bottom: 0;
         margin: auto;
     }
-    
+
 
 
 
     &__shop {
         color: #FFFFFF;
         display: flex;
+        position: relative;
 
         a {
             color: #FFFFFF;
@@ -39,7 +41,7 @@
         }
     }
 
-    
+
 
 
     &__cp {
